@@ -33,6 +33,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 .empty{display:none;text-align:center;padding:40px;color:#aaa}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.grid{grid-template-columns:1fr}}
+.card.collapsible .details,.card.collapsible .visit{display:none}.card.collapsible::after{content:"View details +";display:flex;align-items:center;justify-content:center;min-height:44px;margin-top:14px;padding:10px;border:1px solid #3a4350;border-radius:11px;color:#ffd45a;background:#10151d;text-align:center;font-weight:800}.card.collapsible.open .details{display:block}.card.collapsible.open .visit{display:block}.card.collapsible.open::after{content:"Hide details −"}.card.collapsible{cursor:pointer;min-height:auto}
 </style>
 </head>
 <body>
@@ -41,21 +42,11 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 <div class="tag">Discover the Best AI Tools in One Place</div>
 <div class="powered">Powered by SLD AI CREATIONS</div>
 <input id="search" class="search" placeholder="🔍 Search ChatGPT, Gemini, Video Editors, Image AI..." autocomplete="off">
-<div class="stats"><span class="stat">100 Tools</span><span class="stat">Free + Freemium</span><span class="stat">Mobile Friendly Focus</span></div>
+<div class="stats"><span class="stat">150 Tools</span><span class="stat">Free + Freemium</span><span class="stat">Mobile Friendly Focus</span></div>
 </header>
 <main class="wrap">
 <div class="notice"><b>Note:</b> Free credits and plan limits can change. Exact numbers are shown only where verified; always confirm the latest plan and commercial-use terms on the official website.</div>
-<div class="filters"><button class="filter active" data-filter="All">All</button>
-<button class="filter" data-filter="AI Assistants">AI Assistants</button>
-<button class="filter" data-filter="Video">Video</button>
-<button class="filter" data-filter="Video Editors">Video Editors</button>
-<button class="filter" data-filter="Image">Image</button>
-<button class="filter" data-filter="Design">Design</button>
-<button class="filter" data-filter="Music">Music</button>
-<button class="filter" data-filter="Voice">Voice</button>
-<button class="filter" data-filter="Marketing">Marketing</button>
-<button class="filter" data-filter="Website">Website</button><button class="filter" data-filter="Research">Research</button><button class="filter" data-filter="Coding">Coding</button><button class="filter" data-filter="Automation">Automation</button></div>
-<section class="grid" id="grid">
+<div class="filters"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="AI Assistants">AI Assistants</button><button class="filter" data-filter="Video">Video</button><button class="filter" data-filter="Video Editors">Video Editors</button><button class="filter" data-filter="Image">Image</button><button class="filter" data-filter="Design">Design</button><button class="filter" data-filter="Music">Music</button><button class="filter" data-filter="Voice">Voice</button><button class="filter" data-filter="Marketing">Marketing</button><button class="filter" data-filter="Website">Website</button><button class="filter" data-filter="Research">Research</button><button class="filter" data-filter="Coding">Coding</button><button class="filter" data-filter="Automation">Automation</button><button class="filter" data-filter="AI Developme
 <article class="card" data-cat="AI Assistants" data-search="chatgpt ai assistants scripts, prompts, brainstorming, translation, image creation depending on plan scripts, prompts, stories and creative planning">
       <div class="topline"><span class="num">#01</span><span class="badge">FREE + PAID</span></div>
       <h3>ChatGPT</h3>
@@ -232,7 +223,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://lumalabs.ai/dream-machine" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Video" data-search="pika video text/image-to-video, effects, transformations creative short-form effects">
+<article class="card collapsible" data-cat="Video" data-search="pika video text/image-to-video, effects, transformations creative short-form effects">
       <div class="topline"><span class="num">#12</span><span class="badge">FREEMIUM</span></div>
       <h3>Pika</h3>
       <div class="category">Video</div>
@@ -248,7 +239,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://pika.art/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Video" data-search="pixverse video text/image-to-video, templates, effects reels, effects, fast video creation">
+<article class="card collapsible" data-cat="Video" data-search="pixverse video text/image-to-video, templates, effects reels, effects, fast video creation">
       <div class="topline"><span class="num">#13</span><span class="badge">FREEMIUM</span></div>
       <h3>PixVerse</h3>
       <div class="category">Video</div>
@@ -264,7 +255,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://pixverse.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Video" data-search="invideo ai video script-to-video, stock assembly, voiceover, editing complete social and youtube videos">
+<article class="card collapsible" data-cat="Video" data-search="invideo ai video script-to-video, stock assembly, voiceover, editing complete social and youtube videos">
       <div class="topline"><span class="num">#14</span><span class="badge">FREEMIUM</span></div>
       <h3>InVideo AI</h3>
       <div class="category">Video</div>
@@ -328,7 +319,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://clipchamp.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Video Editors" data-search="descript video editors text-based video/audio editing, transcription, captions talking videos, podcasts, caption editing">
+<article class="card collapsible" data-cat="Video Editors" data-search="descript video editors text-based video/audio editing, transcription, captions talking videos, podcasts, caption editing">
       <div class="topline"><span class="num">#18</span><span class="badge">FREEMIUM</span></div>
       <h3>Descript</h3>
       <div class="category">Video Editors</div>
@@ -344,7 +335,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.descript.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Video Editors" data-search="opusclip video editors long-video to shorts, captions, reframing turning long videos into shorts/reels">
+<article class="card collapsible" data-cat="Video Editors" data-search="opusclip video editors long-video to shorts, captions, reframing turning long videos into shorts/reels">
       <div class="topline"><span class="num">#19</span><span class="badge">FREEMIUM</span></div>
       <h3>OpusClip</h3>
       <div class="category">Video Editors</div>
@@ -360,7 +351,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.opus.pro/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Video Editors" data-search="vmake video editors video enhancement, background/product editing enhancing videos and product creatives">
+<article class="card collapsible" data-cat="Video Editors" data-search="vmake video editors video enhancement, background/product editing enhancing videos and product creatives">
       <div class="topline"><span class="num">#20</span><span class="badge">FREEMIUM</span></div>
       <h3>Vmake</h3>
       <div class="category">Video Editors</div>
@@ -376,7 +367,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://vmake.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Video Editors" data-search="media.io video editors video/audio/image editing, enhancement, conversion quick online media utilities">
+<article class="card collapsible" data-cat="Video Editors" data-search="media.io video editors video/audio/image editing, enhancement, conversion quick online media utilities">
       <div class="topline"><span class="num">#21</span><span class="badge">FREEMIUM</span></div>
       <h3>Media.io</h3>
       <div class="category">Video Editors</div>
@@ -456,7 +447,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.krea.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Image" data-search="playground ai image design, image generation and editing quick designs and images">
+<article class="card collapsible" data-cat="Image" data-search="playground ai image design, image generation and editing quick designs and images">
       <div class="topline"><span class="num">#26</span><span class="badge">FREEMIUM</span></div>
       <h3>Playground AI</h3>
       <div class="category">Image</div>
@@ -472,7 +463,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://playground.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Image" data-search="recraft image images, vectors, icons, design generation logos, icons, vectors and design assets">
+<article class="card collapsible" data-cat="Image" data-search="recraft image images, vectors, icons, design generation logos, icons, vectors and design assets">
       <div class="topline"><span class="num">#27</span><span class="badge">FREEMIUM</span></div>
       <h3>Recraft</h3>
       <div class="category">Image</div>
@@ -488,7 +479,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.recraft.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Design" data-search="microsoft designer design social graphics, image generation, layouts posters and social media graphics">
+<article class="card collapsible" data-cat="Design" data-search="microsoft designer design social graphics, image generation, layouts posters and social media graphics">
       <div class="topline"><span class="num">#28</span><span class="badge">FREE + PAID</span></div>
       <h3>Microsoft Designer</h3>
       <div class="category">Design</div>
@@ -504,7 +495,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://designer.microsoft.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Image" data-search="photoroom image background removal, product images, retouching product photos and ad creatives">
+<article class="card collapsible" data-cat="Image" data-search="photoroom image background removal, product images, retouching product photos and ad creatives">
       <div class="topline"><span class="num">#29</span><span class="badge">FREEMIUM</span></div>
       <h3>Photoroom</h3>
       <div class="category">Image</div>
@@ -520,7 +511,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.photoroom.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Image" data-search="remove.bg image automatic background removal fast background removal">
+<article class="card collapsible" data-cat="Image" data-search="remove.bg image automatic background removal fast background removal">
       <div class="topline"><span class="num">#30</span><span class="badge">FREEMIUM</span></div>
       <h3>Remove.bg</h3>
       <div class="category">Image</div>
@@ -568,7 +559,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.udio.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Music" data-search="aiva music instrumental composition, styles, soundtrack creation background music and instrumental scores">
+<article class="card collapsible" data-cat="Music" data-search="aiva music instrumental composition, styles, soundtrack creation background music and instrumental scores">
       <div class="topline"><span class="num">#33</span><span class="badge">FREEMIUM</span></div>
       <h3>AIVA</h3>
       <div class="category">Music</div>
@@ -584,7 +575,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.aiva.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Music" data-search="beatoven.ai music mood-based background music generation video background music">
+<article class="card collapsible" data-cat="Music" data-search="beatoven.ai music mood-based background music generation video background music">
       <div class="topline"><span class="num">#34</span><span class="badge">FREEMIUM</span></div>
       <h3>Beatoven.ai</h3>
       <div class="category">Music</div>
@@ -632,7 +623,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Voice" data-search="murf ai voice ai voiceover, studio, voice editing business and explainer voiceovers">
+<article class="card collapsible" data-cat="Voice" data-search="murf ai voice ai voiceover, studio, voice editing business and explainer voiceovers">
       <div class="topline"><span class="num">#37</span><span class="badge">FREEMIUM</span></div>
       <h3>Murf AI</h3>
       <div class="category">Voice</div>
@@ -648,7 +639,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://murf.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Voice" data-search="speechify voice text-to-speech, document reading, voice tools reading text and documents aloud">
+<article class="card collapsible" data-cat="Voice" data-search="speechify voice text-to-speech, document reading, voice tools reading text and documents aloud">
       <div class="topline"><span class="num">#38</span><span class="badge">FREE + PAID</span></div>
       <h3>Speechify</h3>
       <div class="category">Voice</div>
@@ -680,7 +671,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://ttsmaker.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Voice" data-search="naturalreader voice text and document reading, tts document and text narration">
+<article class="card collapsible" data-cat="Voice" data-search="naturalreader voice text and document reading, tts document and text narration">
       <div class="topline"><span class="num">#40</span><span class="badge">FREEMIUM</span></div>
       <h3>NaturalReader</h3>
       <div class="category">Voice</div>
@@ -728,7 +719,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://gamma.app/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Marketing" data-search="hubspot ai marketing marketing copy, crm assistance, content tools marketing and crm workflows">
+<article class="card collapsible" data-cat="Marketing" data-search="hubspot ai marketing marketing copy, crm assistance, content tools marketing and crm workflows">
       <div class="topline"><span class="num">#43</span><span class="badge">FREE + PAID</span></div>
       <h3>HubSpot AI</h3>
       <div class="category">Marketing</div>
@@ -744,7 +735,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.hubspot.com/artificial-intelligence" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Marketing" data-search="buffer ai assistant marketing social post ideas, rewriting, scheduling workflow social media content planning">
+<article class="card collapsible" data-cat="Marketing" data-search="buffer ai assistant marketing social post ideas, rewriting, scheduling workflow social media content planning">
       <div class="topline"><span class="num">#44</span><span class="badge">FREE + PAID</span></div>
       <h3>Buffer AI Assistant</h3>
       <div class="category">Marketing</div>
@@ -760,7 +751,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://buffer.com/ai-assistant" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Marketing" data-search="predis.ai marketing social posts, creatives, captions, videos social media ad/post generation">
+<article class="card collapsible" data-cat="Marketing" data-search="predis.ai marketing social posts, creatives, captions, videos social media ad/post generation">
       <div class="topline"><span class="num">#45</span><span class="badge">FREEMIUM</span></div>
       <h3>Predis.ai</h3>
       <div class="category">Marketing</div>
@@ -776,7 +767,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://predis.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Marketing" data-search="mailerlite marketing email campaigns, landing pages, automation email marketing and landing pages">
+<article class="card collapsible" data-cat="Marketing" data-search="mailerlite marketing email campaigns, landing pages, automation email marketing and landing pages">
       <div class="topline"><span class="num">#46</span><span class="badge">FREE + PAID</span></div>
       <h3>MailerLite</h3>
       <div class="category">Marketing</div>
@@ -792,7 +783,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.mailerlite.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="Website" data-search="carrd website landing pages, simple websites, responsive layouts simple landing pages and link sites">
+<article class="card collapsible" data-cat="Website" data-search="carrd website landing pages, simple websites, responsive layouts simple landing pages and link sites">
       <div class="topline"><span class="num">#47</span><span class="badge">FREE + PAID</span></div>
       <h3>Carrd</h3>
       <div class="category">Website</div>
@@ -824,7 +815,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://www.framer.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="AI Assistants" data-search="quillbot ai assistants paraphrase, grammar, summarize, rewrite rewriting and polishing text">
+<article class="card collapsible" data-cat="AI Assistants" data-search="quillbot ai assistants paraphrase, grammar, summarize, rewrite rewriting and polishing text">
       <div class="topline"><span class="num">#49</span><span class="badge">FREEMIUM</span></div>
       <h3>QuillBot</h3>
       <div class="category">AI Assistants</div>
@@ -840,7 +831,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
       </div>
       <a class="visit" href="https://quillbot.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
     </article>
-<article class="card" data-cat="AI Assistants" data-search="grammarly ai assistants grammar, rewrite, tone and writing assistance english writing correction">
+<article class="card collapsible" data-cat="AI Assistants" data-search="grammarly ai assistants grammar, rewrite, tone and writing assistance english writing correction">
       <div class="topline"><span class="num">#50</span><span class="badge">FREEMIUM</span></div>
       <h3>Grammarly</h3>
       <div class="category">AI Assistants</div>
@@ -871,7 +862,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="AI Assistants" data-search="mistral le chat ai assistants chat, research, document analysis, coding fast general ai assistant">
+<article class="card collapsible" data-cat="AI Assistants" data-search="mistral le chat ai assistants chat, research, document analysis, coding fast general ai assistant">
 <div class="topline"><span class="num">#52</span><span class="badge">FREEMIUM</span></div>
 <h3>Mistral Le Chat</h3><div class="category">AI Assistants</div>
 <div class="details">
@@ -886,7 +877,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://chat.mistral.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="AI Assistants" data-search="huggingchat ai assistants chat with multiple open models trying open-source llms">
+<article class="card collapsible" data-cat="AI Assistants" data-search="huggingchat ai assistants chat with multiple open models trying open-source llms">
 <div class="topline"><span class="num">#53</span><span class="badge">FREE</span></div>
 <h3>HuggingChat</h3><div class="category">AI Assistants</div>
 <div class="details">
@@ -901,7 +892,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://huggingface.co/chat/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="AI Assistants" data-search="meta ai ai assistants chat, image creation, assistant features everyday assistant and social ai">
+<article class="card collapsible" data-cat="AI Assistants" data-search="meta ai ai assistants chat, image creation, assistant features everyday assistant and social ai">
 <div class="topline"><span class="num">#54</span><span class="badge">FREE</span></div>
 <h3>Meta AI</h3><div class="category">AI Assistants</div>
 <div class="details">
@@ -931,7 +922,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Research" data-search="phind research developer-focused search and answers technical research and coding">
+<article class="card collapsible" data-cat="Research" data-search="phind research developer-focused search and answers technical research and coding">
 <div class="topline"><span class="num">#56</span><span class="badge">FREEMIUM</span></div>
 <h3>Phind</h3><div class="category">Research</div>
 <div class="details">
@@ -976,7 +967,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://elicit.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Research" data-search="scite research smart citations and research verification checking scientific citations">
+<article class="card collapsible" data-cat="Research" data-search="scite research smart citations and research verification checking scientific citations">
 <div class="topline"><span class="num">#59</span><span class="badge">FREEMIUM</span></div>
 <h3>Scite</h3><div class="category">Research</div>
 <div class="details">
@@ -991,7 +982,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://scite.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Research" data-search="you.com research ai search, research and agents ai-powered web research">
+<article class="card collapsible" data-cat="Research" data-search="you.com research ai search, research and agents ai-powered web research">
 <div class="topline"><span class="num">#60</span><span class="badge">FREE + PAID</span></div>
 <h3>You.com</h3><div class="category">Research</div>
 <div class="details">
@@ -1021,7 +1012,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.heygen.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video" data-search="synthesia video ai presenters, scripts, multilingual business videos training and presenter videos">
+<article class="card collapsible" data-cat="Video" data-search="synthesia video ai presenters, scripts, multilingual business videos training and presenter videos">
 <div class="topline"><span class="num">#62</span><span class="badge">FREEMIUM</span></div>
 <h3>Synthesia</h3><div class="category">Video</div>
 <div class="details">
@@ -1036,7 +1027,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.synthesia.io/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video" data-search="d-id video talking photos, avatars, video agents talking-photo videos">
+<article class="card collapsible" data-cat="Video" data-search="d-id video talking photos, avatars, video agents talking-photo videos">
 <div class="topline"><span class="num">#63</span><span class="badge">FREEMIUM</span></div>
 <h3>D-ID</h3><div class="category">Video</div>
 <div class="details">
@@ -1051,7 +1042,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.d-id.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video" data-search="haiper video text-to-video and image-to-video fast creative video clips">
+<article class="card collapsible" data-cat="Video" data-search="haiper video text-to-video and image-to-video fast creative video clips">
 <div class="topline"><span class="num">#64</span><span class="badge">FREEMIUM</span></div>
 <h3>Haiper</h3><div class="category">Video</div>
 <div class="details">
@@ -1081,7 +1072,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.vidu.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video" data-search="pollo ai video access multiple ai video/image models trying multiple video models">
+<article class="card collapsible" data-cat="Video" data-search="pollo ai video access multiple ai video/image models trying multiple video models">
 <div class="topline"><span class="num">#66</span><span class="badge">FREEMIUM</span></div>
 <h3>Pollo AI</h3><div class="category">Video</div>
 <div class="details">
@@ -1096,7 +1087,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://pollo.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video" data-search="hedra video talking characters, image/video creation character performance videos">
+<article class="card collapsible" data-cat="Video" data-search="hedra video talking characters, image/video creation character performance videos">
 <div class="topline"><span class="num">#67</span><span class="badge">FREEMIUM</span></div>
 <h3>Hedra</h3><div class="category">Video</div>
 <div class="details">
@@ -1111,7 +1102,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.hedra.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video" data-search="akool video avatars, face swap, translation, talking video marketing avatar videos">
+<article class="card collapsible" data-cat="Video" data-search="akool video avatars, face swap, translation, talking video marketing avatar videos">
 <div class="topline"><span class="num">#68</span><span class="badge">FREEMIUM</span></div>
 <h3>Akool</h3><div class="category">Video</div>
 <div class="details">
@@ -1126,7 +1117,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://akool.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video Editors" data-search="captions video editors ai editing, captions, avatars, dubbing talking-head social videos">
+<article class="card collapsible" data-cat="Video Editors" data-search="captions video editors ai editing, captions, avatars, dubbing talking-head social videos">
 <div class="topline"><span class="num">#69</span><span class="badge">FREE + PAID</span></div>
 <h3>Captions</h3><div class="category">Video Editors</div>
 <div class="details">
@@ -1141,7 +1132,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.captions.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video Editors" data-search="kapwing video editors video editing, subtitles, resizing, ai tools social video editing">
+<article class="card collapsible" data-cat="Video Editors" data-search="kapwing video editors video editing, subtitles, resizing, ai tools social video editing">
 <div class="topline"><span class="num">#70</span><span class="badge">FREEMIUM</span></div>
 <h3>Kapwing</h3><div class="category">Video Editors</div>
 <div class="details">
@@ -1156,7 +1147,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.kapwing.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video Editors" data-search="flexclip video editors online video editor, templates, ai media tools quick marketing videos">
+<article class="card collapsible" data-cat="Video Editors" data-search="flexclip video editors online video editor, templates, ai media tools quick marketing videos">
 <div class="topline"><span class="num">#71</span><span class="badge">FREEMIUM</span></div>
 <h3>FlexClip</h3><div class="category">Video Editors</div>
 <div class="details">
@@ -1171,7 +1162,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.flexclip.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video Editors" data-search="wisecut video editors auto cuts, subtitles, silence removal, reframing editing talking videos quickly">
+<article class="card collapsible" data-cat="Video Editors" data-search="wisecut video editors auto cuts, subtitles, silence removal, reframing editing talking videos quickly">
 <div class="topline"><span class="num">#72</span><span class="badge">FREEMIUM</span></div>
 <h3>Wisecut</h3><div class="category">Video Editors</div>
 <div class="details">
@@ -1186,7 +1177,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.wisecut.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Video Editors" data-search="submagic video editors animated captions, short-form editing, hooks reels and shorts captions">
+<article class="card collapsible" data-cat="Video Editors" data-search="submagic video editors animated captions, short-form editing, hooks reels and shorts captions">
 <div class="topline"><span class="num">#73</span><span class="badge">FREEMIUM</span></div>
 <h3>Submagic</h3><div class="category">Video Editors</div>
 <div class="details">
@@ -1201,7 +1192,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.submagic.co/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Image" data-search="nightcafe image text-to-image, styles and community creation casual image generation">
+<article class="card collapsible" data-cat="Image" data-search="nightcafe image text-to-image, styles and community creation casual image generation">
 <div class="topline"><span class="num">#74</span><span class="badge">FREEMIUM</span></div>
 <h3>NightCafe</h3><div class="category">Image</div>
 <div class="details">
@@ -1216,7 +1207,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://nightcafe.studio/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Image" data-search="mage.space image text-to-image and creative image workflows experimenting with image models">
+<article class="card collapsible" data-cat="Image" data-search="mage.space image text-to-image and creative image workflows experimenting with image models">
 <div class="topline"><span class="num">#75</span><span class="badge">FREEMIUM</span></div>
 <h3>Mage.Space</h3><div class="category">Image</div>
 <div class="details">
@@ -1231,7 +1222,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.mage.space/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Image" data-search="tensor.art image image generation, workflows, model community anime and custom model images">
+<article class="card collapsible" data-cat="Image" data-search="tensor.art image image generation, workflows, model community anime and custom model images">
 <div class="topline"><span class="num">#76</span><span class="badge">FREEMIUM</span></div>
 <h3>Tensor.Art</h3><div class="category">Image</div>
 <div class="details">
@@ -1246,7 +1237,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://tensor.art/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Image" data-search="seaart ai image image generation, workflows and creative tools broad image styles">
+<article class="card collapsible" data-cat="Image" data-search="seaart ai image image generation, workflows and creative tools broad image styles">
 <div class="topline"><span class="num">#77</span><span class="badge">FREEMIUM</span></div>
 <h3>SeaArt AI</h3><div class="category">Image</div>
 <div class="details">
@@ -1261,7 +1252,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.seaart.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Image" data-search="freepik ai suite image image generation, editing, mockups, design assets design and stock-style creation">
+<article class="card collapsible" data-cat="Image" data-search="freepik ai suite image image generation, editing, mockups, design assets design and stock-style creation">
 <div class="topline"><span class="num">#78</span><span class="badge">FREE + PAID</span></div>
 <h3>Freepik AI Suite</h3><div class="category">Image</div>
 <div class="details">
@@ -1276,7 +1267,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.freepik.com/ai" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Image" data-search="picsart image photo editing, background tools, ai generation mobile image editing">
+<article class="card collapsible" data-cat="Image" data-search="picsart image photo editing, background tools, ai generation mobile image editing">
 <div class="topline"><span class="num">#79</span><span class="badge">FREE + PAID</span></div>
 <h3>Picsart</h3><div class="category">Image</div>
 <div class="details">
@@ -1291,7 +1282,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://picsart.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Image" data-search="clipdrop image cleanup, relight, upscale, background removal fast ai photo utilities">
+<article class="card collapsible" data-cat="Image" data-search="clipdrop image cleanup, relight, upscale, background removal fast ai photo utilities">
 <div class="topline"><span class="num">#80</span><span class="badge">FREEMIUM</span></div>
 <h3>Clipdrop</h3><div class="category">Image</div>
 <div class="details">
@@ -1306,7 +1297,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://clipdrop.co/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Music" data-search="soundraw music generate customizable background music youtube background music">
+<article class="card collapsible" data-cat="Music" data-search="soundraw music generate customizable background music youtube background music">
 <div class="topline"><span class="num">#81</span><span class="badge">FREEMIUM</span></div>
 <h3>Soundraw</h3><div class="category">Music</div>
 <div class="details">
@@ -1321,7 +1312,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://soundraw.io/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Music" data-search="mubert music prompt-based royalty-oriented music generation background music and streams">
+<article class="card collapsible" data-cat="Music" data-search="mubert music prompt-based royalty-oriented music generation background music and streams">
 <div class="topline"><span class="num">#82</span><span class="badge">FREEMIUM</span></div>
 <h3>Mubert</h3><div class="category">Music</div>
 <div class="details">
@@ -1336,7 +1327,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://mubert.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Music" data-search="loudly music ai music generation and customization creator background music">
+<article class="card collapsible" data-cat="Music" data-search="loudly music ai music generation and customization creator background music">
 <div class="topline"><span class="num">#83</span><span class="badge">FREEMIUM</span></div>
 <h3>Loudly</h3><div class="category">Music</div>
 <div class="details">
@@ -1351,7 +1342,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://www.loudly.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Music" data-search="boomy music create songs quickly and customize them beginners making ai songs">
+<article class="card collapsible" data-cat="Music" data-search="boomy music create songs quickly and customize them beginners making ai songs">
 <div class="topline"><span class="num">#84</span><span class="badge">FREEMIUM</span></div>
 <h3>Boomy</h3><div class="category">Music</div>
 <div class="details">
@@ -1366,7 +1357,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://boomy.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Voice" data-search="voicemod voice real-time voice changer and soundboard live voice effects">
+<article class="card collapsible" data-cat="Voice" data-search="voicemod voice real-time voice changer and soundboard live voice effects">
 <div class="topline"><span class="num">#85</span><span class="badge">FREE + PAID</span></div>
 <h3>Voicemod</h3><div class="category">Voice</div>
 <div class="details">
@@ -1396,7 +1387,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://play.ht/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Voice" data-search="lovo ai voice text-to-speech and voiceover studio narration and marketing voiceovers">
+<article class="card collapsible" data-cat="Voice" data-search="lovo ai voice text-to-speech and voiceover studio narration and marketing voiceovers">
 <div class="topline"><span class="num">#87</span><span class="badge">FREEMIUM</span></div>
 <h3>LOVO AI</h3><div class="category">Voice</div>
 <div class="details">
@@ -1411,7 +1402,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://lovo.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Voice" data-search="kits ai voice singing voice conversion, voice tools music vocals and voice conversion">
+<article class="card collapsible" data-cat="Voice" data-search="kits ai voice singing voice conversion, voice tools music vocals and voice conversion">
 <div class="topline"><span class="num">#88</span><span class="badge">FREEMIUM</span></div>
 <h3>Kits AI</h3><div class="category">Voice</div>
 <div class="details">
@@ -1486,7 +1477,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://replit.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Coding" data-search="bolt.new coding prompt-to-full-stack web apps fast mvps and websites">
+<article class="card collapsible" data-cat="Coding" data-search="bolt.new coding prompt-to-full-stack web apps fast mvps and websites">
 <div class="topline"><span class="num">#93</span><span class="badge">FREEMIUM</span></div>
 <h3>Bolt.new</h3><div class="category">Coding</div>
 <div class="details">
@@ -1516,7 +1507,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://lovable.dev/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Website" data-search="v0 website generate ui and web apps from prompts frontend/ui generation">
+<article class="card collapsible" data-cat="Website" data-search="v0 website generate ui and web apps from prompts frontend/ui generation">
 <div class="topline"><span class="num">#95</span><span class="badge">FREEMIUM</span></div>
 <h3>v0</h3><div class="category">Website</div>
 <div class="details">
@@ -1531,7 +1522,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://v0.app/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Design" data-search="uizard design ui mockups, wireframes and design generation app and website mockups">
+<article class="card collapsible" data-cat="Design" data-search="uizard design ui mockups, wireframes and design generation app and website mockups">
 <div class="topline"><span class="num">#96</span><span class="badge">FREEMIUM</span></div>
 <h3>Uizard</h3><div class="category">Design</div>
 <div class="details">
@@ -1546,7 +1537,7 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://uizard.io/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
-<article class="card" data-cat="Design" data-search="napkin ai design turn text into diagrams and visual explanations visuals for presentations/content">
+<article class="card collapsible" data-cat="Design" data-search="napkin ai design turn text into diagrams and visual explanations visuals for presentations/content">
 <div class="topline"><span class="num">#97</span><span class="badge">FREEMIUM</span></div>
 <h3>Napkin AI</h3><div class="category">Design</div>
 <div class="details">
@@ -1606,6 +1597,270 @@ footer{text-align:center;border-top:1px solid #262b33;padding:25px;color:#8f96a3
 </div>
 <a class="visit" href="https://n8n.io/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
 </article>
+<article class="card" data-cat="AI Assistants" data-search="grok ai assistants chat, reasoning, research, image features depending on access general ai assistance and current-topic exploration">
+<div class="topline"><span class="num">#101</span><span class="badge">FREE + PAID</span></div>
+<h3>Grok</h3><div class="category">AI Assistants</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free access may be available with usage limits</p><p><b>🧠 Models/Type:</b> xAI models</p><p><b>✨ Features:</b> Chat, reasoning, research, image features depending on access</p><p><b>📱 Mobile/Web:</b> Web / mobile</p><p><b>💼 Commercial Use:</b> Check xAI terms</p><p><b>🎯 Best For:</b> General AI assistance and current-topic exploration</p><p><b>⭐ SLD Rating:</b> 9.2/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://grok.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="AI Assistants" data-search="qwen chat ai assistants chat, reasoning, coding, multimodal assistance general ai, coding and multilingual tasks">
+<div class="topline"><span class="num">#102</span><span class="badge">FREE</span></div>
+<h3>Qwen Chat</h3><div class="category">AI Assistants</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free web chat access; service limits may apply</p><p><b>🧠 Models/Type:</b> Qwen models</p><p><b>✨ Features:</b> Chat, reasoning, coding, multimodal assistance</p><p><b>📱 Mobile/Web:</b> Web / mobile availability varies</p><p><b>💼 Commercial Use:</b> Check Alibaba/Qwen terms</p><p><b>🎯 Best For:</b> General AI, coding and multilingual tasks</p><p><b>⭐ SLD Rating:</b> 9.1/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://chat.qwen.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="AI Assistants" data-search="duck.ai ai assistants privacy-focused ai chat private everyday ai chat">
+<div class="topline"><span class="num">#103</span><span class="badge">FREE</span></div>
+<h3>Duck.ai</h3><div class="category">AI Assistants</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free private AI chat with supported model limits</p><p><b>🧠 Models/Type:</b> Multiple third-party models</p><p><b>✨ Features:</b> Privacy-focused AI chat</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Provider/model terms vary</p><p><b>🎯 Best For:</b> Private everyday AI chat</p><p><b>⭐ SLD Rating:</b> 8.8/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://duck.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="AI Assistants" data-search="pi ai assistants conversational personal ai assistant natural conversation and brainstorming">
+<div class="topline"><span class="num">#104</span><span class="badge">FREE</span></div>
+<h3>Pi</h3><div class="category">AI Assistants</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free conversational access</p><p><b>🧠 Models/Type:</b> Inflection AI</p><p><b>✨ Features:</b> Conversational personal AI assistant</p><p><b>📱 Mobile/Web:</b> Web / mobile</p><p><b>💼 Commercial Use:</b> Check terms</p><p><b>🎯 Best For:</b> Natural conversation and brainstorming</p><p><b>⭐ SLD Rating:</b> 8.4/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://pi.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="AI Development" data-search="google ai studio ai development prompt testing, multimodal prototyping, api code generation testing gemini prompts and building ai apps">
+<div class="topline"><span class="num">#105</span><span class="badge">FREE + PAID API</span></div>
+<h3>Google AI Studio</h3><div class="category">AI Development</div>
+<div class="details"><p><b>🎁 Free Usage:</b> AI Studio prototyping has free access; API quotas/pricing vary</p><p><b>🧠 Models/Type:</b> Gemini models</p><p><b>✨ Features:</b> Prompt testing, multimodal prototyping, API code generation</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Google API terms apply</p><p><b>🎯 Best For:</b> Testing Gemini prompts and building AI apps</p><p><b>⭐ SLD Rating:</b> 9.7/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="AI Development" data-search="hugging face ai development models, datasets, spaces, inference and demos open-source ai discovery and development">
+<div class="topline"><span class="num">#106</span><span class="badge">FREE + PAID</span></div>
+<h3>Hugging Face</h3><div class="category">AI Development</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free community/model access; hosted compute may cost</p><p><b>🧠 Models/Type:</b> Thousands of open models</p><p><b>✨ Features:</b> Models, datasets, Spaces, inference and demos</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Individual model licenses vary</p><p><b>🎯 Best For:</b> Open-source AI discovery and development</p><p><b>⭐ SLD Rating:</b> 9.6/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="AI Development" data-search="openrouter ai development single api/interface for many ai models comparing and routing llms">
+<div class="topline"><span class="num">#107</span><span class="badge">FREE + PAID</span></div>
+<h3>OpenRouter</h3><div class="category">AI Development</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Some free models/routes; paid usage for many models</p><p><b>🧠 Models/Type:</b> Many LLM providers</p><p><b>✨ Features:</b> Single API/interface for many AI models</p><p><b>📱 Mobile/Web:</b> Web / API</p><p><b>💼 Commercial Use:</b> Model/provider terms vary</p><p><b>🎯 Best For:</b> Comparing and routing LLMs</p><p><b>⭐ SLD Rating:</b> 9.2/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://openrouter.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="AI Development" data-search="replicate ai development run image, video, audio and llm models via api developers testing generative models">
+<div class="topline"><span class="num">#108</span><span class="badge">PAID + DEMOS</span></div>
+<h3>Replicate</h3><div class="category">AI Development</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Some demos can be tried; API compute is generally usage-based</p><p><b>🧠 Models/Type:</b> Open and hosted AI models</p><p><b>✨ Features:</b> Run image, video, audio and LLM models via API</p><p><b>📱 Mobile/Web:</b> Web / API</p><p><b>💼 Commercial Use:</b> Model licenses vary</p><p><b>🎯 Best For:</b> Developers testing generative models</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://replicate.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Open Source" data-search="comfyui open source node-based generative ai workflows advanced local image/video workflows">
+<div class="topline"><span class="num">#109</span><span class="badge">OPEN SOURCE</span></div>
+<h3>ComfyUI</h3><div class="category">Open Source</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free local software; GPU/compute is your responsibility</p><p><b>🧠 Models/Type:</b> Open image/video models</p><p><b>✨ Features:</b> Node-based generative AI workflows</p><p><b>📱 Mobile/Web:</b> Desktop / local / cloud hosts</p><p><b>💼 Commercial Use:</b> Model licenses vary</p><p><b>🎯 Best For:</b> Advanced local image/video workflows</p><p><b>⭐ SLD Rating:</b> 9.7/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.comfy.org/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Open Source" data-search="automatic1111 open source local text-to-image, extensions and model control local stable diffusion generation">
+<div class="topline"><span class="num">#110</span><span class="badge">OPEN SOURCE</span></div>
+<h3>AUTOMATIC1111</h3><div class="category">Open Source</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free local software; requires compatible hardware</p><p><b>🧠 Models/Type:</b> Stable Diffusion ecosystem</p><p><b>✨ Features:</b> Local text-to-image, extensions and model control</p><p><b>📱 Mobile/Web:</b> Desktop / local</p><p><b>💼 Commercial Use:</b> Model licenses vary</p><p><b>🎯 Best For:</b> Local Stable Diffusion generation</p><p><b>⭐ SLD Rating:</b> 9.2/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Open Source" data-search="fooocus open source simplified local image generation easy local ai image generation">
+<div class="topline"><span class="num">#111</span><span class="badge">OPEN SOURCE</span></div>
+<h3>Fooocus</h3><div class="category">Open Source</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free local software; hardware required</p><p><b>🧠 Models/Type:</b> Stable Diffusion / SDXL workflows</p><p><b>✨ Features:</b> Simplified local image generation</p><p><b>📱 Mobile/Web:</b> Desktop / local</p><p><b>💼 Commercial Use:</b> Model licenses vary</p><p><b>🎯 Best For:</b> Easy local AI image generation</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://github.com/lllyasviel/Fooocus" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Open Source" data-search="ollama open source run llms locally with simple commands/api private local ai assistants">
+<div class="topline"><span class="num">#112</span><span class="badge">OPEN SOURCE</span></div>
+<h3>Ollama</h3><div class="category">Open Source</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free local software; hardware required</p><p><b>🧠 Models/Type:</b> Llama, Qwen, Gemma and other local models</p><p><b>✨ Features:</b> Run LLMs locally with simple commands/API</p><p><b>📱 Mobile/Web:</b> Desktop / local</p><p><b>💼 Commercial Use:</b> Individual model licenses vary</p><p><b>🎯 Best For:</b> Private local AI assistants</p><p><b>⭐ SLD Rating:</b> 9.6/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://ollama.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Open Source" data-search="lm studio open source download, chat with and serve local language models no-code local llm use">
+<div class="topline"><span class="num">#113</span><span class="badge">FREE</span></div>
+<h3>LM Studio</h3><div class="category">Open Source</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free desktop app; local hardware required</p><p><b>🧠 Models/Type:</b> Compatible local LLMs</p><p><b>✨ Features:</b> Download, chat with and serve local language models</p><p><b>📱 Mobile/Web:</b> Desktop</p><p><b>💼 Commercial Use:</b> Model licenses vary</p><p><b>🎯 Best For:</b> No-code local LLM use</p><p><b>⭐ SLD Rating:</b> 9.4/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Video Editors" data-search="davinci resolve video editors professional editing, color, audio, vfx and ai-assisted tools professional video editing">
+<div class="topline"><span class="num">#114</span><span class="badge">FREE + PAID</span></div>
+<h3>DaVinci Resolve</h3><div class="category">Video Editors</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Powerful free desktop editor; Studio adds paid features</p><p><b>🧠 Models/Type:</b> DaVinci Neural Engine features</p><p><b>✨ Features:</b> Professional editing, color, audio, VFX and AI-assisted tools</p><p><b>📱 Mobile/Web:</b> Desktop</p><p><b>💼 Commercial Use:</b> Commercial editing supported; asset licenses vary</p><p><b>🎯 Best For:</b> Professional video editing</p><p><b>⭐ SLD Rating:</b> 9.8/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Video Editors" data-search="vn video editor video editors timeline editing, transitions, captions, effects free mobile video editing">
+<div class="topline"><span class="num">#115</span><span class="badge">FREE</span></div>
+<h3>VN Video Editor</h3><div class="category">Video Editors</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Core mobile/desktop editing available free</p><p><b>🧠 Models/Type:</b> Editing tools</p><p><b>✨ Features:</b> Timeline editing, transitions, captions, effects</p><p><b>📱 Mobile/Web:</b> Android / iOS / desktop</p><p><b>💼 Commercial Use:</b> Check asset/music licenses</p><p><b>🎯 Best For:</b> Free mobile video editing</p><p><b>⭐ SLD Rating:</b> 9.3/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.vlognow.me/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Video Editors" data-search="adobe express video editors quick video, social graphics, captions and templates fast social video and design">
+<div class="topline"><span class="num">#116</span><span class="badge">FREE + PAID</span></div>
+<h3>Adobe Express</h3><div class="category">Video Editors</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free plan available; premium assets/AI limits apply</p><p><b>🧠 Models/Type:</b> Adobe AI tools</p><p><b>✨ Features:</b> Quick video, social graphics, captions and templates</p><p><b>📱 Mobile/Web:</b> Web / Android / iOS</p><p><b>💼 Commercial Use:</b> Adobe content/license terms apply</p><p><b>🎯 Best For:</b> Fast social video and design</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.adobe.com/express/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Video Editors" data-search="filmora video editors video editing, captions, effects and ai editing easy feature-rich video editing">
+<div class="topline"><span class="num">#117</span><span class="badge">FREE TRIAL + PAID</span></div>
+<h3>Filmora</h3><div class="category">Video Editors</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Trial available; export restrictions/watermark may apply</p><p><b>🧠 Models/Type:</b> Wondershare AI tools</p><p><b>✨ Features:</b> Video editing, captions, effects and AI editing</p><p><b>📱 Mobile/Web:</b> Desktop / mobile</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Easy feature-rich video editing</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://filmora.wondershare.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Video" data-search="google vids video create business videos with ai assistance, scripts and assets workplace explainers and presentations">
+<div class="topline"><span class="num">#118</span><span class="badge">FREE + PAID</span></div>
+<h3>Google Vids</h3><div class="category">Video</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Access depends on Google account/Workspace plan</p><p><b>🧠 Models/Type:</b> Gemini-powered video features</p><p><b>✨ Features:</b> Create business videos with AI assistance, scripts and assets</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Google Workspace terms apply</p><p><b>🎯 Best For:</b> Workplace explainers and presentations</p><p><b>⭐ SLD Rating:</b> 8.8/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://workspace.google.com/products/vids/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Video" data-search="ltx studio video storyboards, shots, characters and ai filmmaking workflow story planning and ai filmmaking">
+<div class="topline"><span class="num">#119</span><span class="badge">FREEMIUM</span></div>
+<h3>LTX Studio</h3><div class="category">Video</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free/trial credits may be available; limits apply</p><p><b>🧠 Models/Type:</b> LTX creative/video models</p><p><b>✨ Features:</b> Storyboards, shots, characters and AI filmmaking workflow</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Story planning and AI filmmaking</p><p><b>⭐ SLD Rating:</b> 9.1/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://ltx.studio/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Video" data-search="krea video video generate and enhance video in creative workflows testing multiple video workflows">
+<div class="topline"><span class="num">#120</span><span class="badge">FREEMIUM</span></div>
+<h3>Krea Video</h3><div class="category">Video</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free usage subject to Krea plan limits</p><p><b>🧠 Models/Type:</b> Multiple video models</p><p><b>✨ Features:</b> Generate and enhance video in creative workflows</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Model/plan terms vary</p><p><b>🎯 Best For:</b> Testing multiple video workflows</p><p><b>⭐ SLD Rating:</b> 8.9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.krea.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Image" data-search="fotor image photo editing, image generation, enhancement quick photo editing and ai images">
+<div class="topline"><span class="num">#121</span><span class="badge">FREE + PAID</span></div>
+<h3>Fotor</h3><div class="category">Image</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free editor and limited AI credits/features</p><p><b>🧠 Models/Type:</b> Fotor AI</p><p><b>✨ Features:</b> Photo editing, image generation, enhancement</p><p><b>📱 Mobile/Web:</b> Web / mobile</p><p><b>💼 Commercial Use:</b> Plan/content terms apply</p><p><b>🎯 Best For:</b> Quick photo editing and AI images</p><p><b>⭐ SLD Rating:</b> 8.6/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.fotor.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Image" data-search="pixlr image photo editor, background tools, generative features browser photo editing">
+<div class="topline"><span class="num">#122</span><span class="badge">FREE + PAID</span></div>
+<h3>Pixlr</h3><div class="category">Image</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free web editing available; AI/advanced features limited</p><p><b>🧠 Models/Type:</b> Pixlr AI</p><p><b>✨ Features:</b> Photo editor, background tools, generative features</p><p><b>📱 Mobile/Web:</b> Web / mobile</p><p><b>💼 Commercial Use:</b> Check terms</p><p><b>🎯 Best For:</b> Browser photo editing</p><p><b>⭐ SLD Rating:</b> 8.6/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://pixlr.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Image" data-search="photopea image psd-style layer editing and design free photoshop-style editing">
+<div class="topline"><span class="num">#123</span><span class="badge">FREE + PAID</span></div>
+<h3>Photopea</h3><div class="category">Image</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Full browser editor usable free with ads</p><p><b>🧠 Models/Type:</b> Browser image editor</p><p><b>✨ Features:</b> PSD-style layer editing and design</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> User asset licenses apply</p><p><b>🎯 Best For:</b> Free Photoshop-style editing</p><p><b>⭐ SLD Rating:</b> 9.2/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.photopea.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Image" data-search="upscayl image image enlargement and enhancement free local image upscaling">
+<div class="topline"><span class="num">#124</span><span class="badge">OPEN SOURCE</span></div>
+<h3>Upscayl</h3><div class="category">Image</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free local upscaler; hardware required</p><p><b>🧠 Models/Type:</b> AI upscaling models</p><p><b>✨ Features:</b> Image enlargement and enhancement</p><p><b>📱 Mobile/Web:</b> Desktop / local</p><p><b>💼 Commercial Use:</b> Check model/license terms</p><p><b>🎯 Best For:</b> Free local image upscaling</p><p><b>⭐ SLD Rating:</b> 9.1/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://upscayl.org/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Audio Editing" data-search="audacity audio editing record, cut, clean and process audio voice and music editing">
+<div class="topline"><span class="num">#125</span><span class="badge">OPEN SOURCE</span></div>
+<h3>Audacity</h3><div class="category">Audio Editing</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Completely free desktop audio editor</p><p><b>🧠 Models/Type:</b> Audio processing tools</p><p><b>✨ Features:</b> Record, cut, clean and process audio</p><p><b>📱 Mobile/Web:</b> Desktop</p><p><b>💼 Commercial Use:</b> Open-source; plugins/assets may differ</p><p><b>🎯 Best For:</b> Voice and music editing</p><p><b>⭐ SLD Rating:</b> 9.4/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.audacityteam.org/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Audio Editing" data-search="adobe podcast audio editing enhance speech, recording and podcast audio cleaning ai voiceovers">
+<div class="topline"><span class="num">#126</span><span class="badge">FREE + PAID</span></div>
+<h3>Adobe Podcast</h3><div class="category">Audio Editing</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free audio enhancement features with limits; premium expands use</p><p><b>🧠 Models/Type:</b> Adobe speech enhancement AI</p><p><b>✨ Features:</b> Enhance speech, recording and podcast audio</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Adobe terms apply</p><p><b>🎯 Best For:</b> Cleaning AI voiceovers</p><p><b>⭐ SLD Rating:</b> 9.2/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://podcast.adobe.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Audio Editing" data-search="auphonic audio editing loudness leveling, noise reduction and mastering automatic voice/podcast cleanup">
+<div class="topline"><span class="num">#127</span><span class="badge">FREEMIUM</span></div>
+<h3>Auphonic</h3><div class="category">Audio Editing</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free monthly processing allowance; paid for more</p><p><b>🧠 Models/Type:</b> Audio post-production AI</p><p><b>✨ Features:</b> Loudness leveling, noise reduction and mastering</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Automatic voice/podcast cleanup</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://auphonic.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Audio Editing" data-search="moises audio editing separate vocals/instruments, tempo and pitch tools music stem separation">
+<div class="topline"><span class="num">#128</span><span class="badge">FREEMIUM</span></div>
+<h3>Moises</h3><div class="category">Audio Editing</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free plan with processing/song limits</p><p><b>🧠 Models/Type:</b> Music separation AI</p><p><b>✨ Features:</b> Separate vocals/instruments, tempo and pitch tools</p><p><b>📱 Mobile/Web:</b> Web / Android / iOS</p><p><b>💼 Commercial Use:</b> Content rights remain important</p><p><b>🎯 Best For:</b> Music stem separation</p><p><b>⭐ SLD Rating:</b> 9.1/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://moises.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Transcription" data-search="otter.ai transcription meeting transcription, summaries and notes meetings and spoken notes">
+<div class="topline"><span class="num">#129</span><span class="badge">FREEMIUM</span></div>
+<h3>Otter.ai</h3><div class="category">Transcription</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free transcription allowance; monthly limits apply</p><p><b>🧠 Models/Type:</b> Otter speech AI</p><p><b>✨ Features:</b> Meeting transcription, summaries and notes</p><p><b>📱 Mobile/Web:</b> Web / mobile</p><p><b>💼 Commercial Use:</b> Check recording consent and terms</p><p><b>🎯 Best For:</b> Meetings and spoken notes</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://otter.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Transcription" data-search="turboscribe transcription audio/video transcription and subtitles fast transcription">
+<div class="topline"><span class="num">#130</span><span class="badge">FREE + PAID</span></div>
+<h3>TurboScribe</h3><div class="category">Transcription</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free daily transcription allowance with limits</p><p><b>🧠 Models/Type:</b> Whisper-based transcription</p><p><b>✨ Features:</b> Audio/video transcription and subtitles</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Check terms</p><p><b>🎯 Best For:</b> Fast transcription</p><p><b>⭐ SLD Rating:</b> 9.2/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://turboscribe.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Transcription" data-search="whisper transcription speech recognition and multilingual transcription local speech-to-text">
+<div class="topline"><span class="num">#131</span><span class="badge">OPEN SOURCE</span></div>
+<h3>Whisper</h3><div class="category">Transcription</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Open-source model; local compute required</p><p><b>🧠 Models/Type:</b> OpenAI Whisper</p><p><b>✨ Features:</b> Speech recognition and multilingual transcription</p><p><b>📱 Mobile/Web:</b> Local / developer tools</p><p><b>💼 Commercial Use:</b> MIT-licensed code; model/use terms apply</p><p><b>🎯 Best For:</b> Local speech-to-text</p><p><b>⭐ SLD Rating:</b> 9.6/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://github.com/openai/whisper" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Translation" data-search="deepl translation text/document translation and writing assistance high-quality translation">
+<div class="topline"><span class="num">#132</span><span class="badge">FREE + PAID</span></div>
+<h3>DeepL</h3><div class="category">Translation</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free translator available; document/API limits apply</p><p><b>🧠 Models/Type:</b> DeepL translation models</p><p><b>✨ Features:</b> Text/document translation and writing assistance</p><p><b>📱 Mobile/Web:</b> Web / mobile</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> High-quality translation</p><p><b>⭐ SLD Rating:</b> 9.5/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Translation" data-search="google translate translation text, speech, image and document translation everyday multilingual translation">
+<div class="topline"><span class="num">#133</span><span class="badge">FREE</span></div>
+<h3>Google Translate</h3><div class="category">Translation</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Consumer translator available free</p><p><b>🧠 Models/Type:</b> Google translation models</p><p><b>✨ Features:</b> Text, speech, image and document translation</p><p><b>📱 Mobile/Web:</b> Web / Android / iOS</p><p><b>💼 Commercial Use:</b> Check Google terms</p><p><b>🎯 Best For:</b> Everyday multilingual translation</p><p><b>⭐ SLD Rating:</b> 9.4/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Productivity" data-search="notion ai productivity writing, search, summaries and workspace assistance notes and team knowledge">
+<div class="topline"><span class="num">#134</span><span class="badge">FREE + PAID</span></div>
+<h3>Notion AI</h3><div class="category">Productivity</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Notion free workspace exists; AI availability/limits depend on plan</p><p><b>🧠 Models/Type:</b> Notion AI</p><p><b>✨ Features:</b> Writing, search, summaries and workspace assistance</p><p><b>📱 Mobile/Web:</b> Web / desktop / mobile</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Notes and team knowledge</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.notion.com/product/ai" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Productivity" data-search="taskade productivity tasks, projects, ai agents and collaboration ai-assisted project management">
+<div class="topline"><span class="num">#135</span><span class="badge">FREEMIUM</span></div>
+<h3>Taskade</h3><div class="category">Productivity</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free workspace/AI allowance subject to limits</p><p><b>🧠 Models/Type:</b> Taskade AI agents</p><p><b>✨ Features:</b> Tasks, projects, AI agents and collaboration</p><p><b>📱 Mobile/Web:</b> Web / mobile / desktop</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> AI-assisted project management</p><p><b>⭐ SLD Rating:</b> 8.8/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.taskade.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Productivity" data-search="clickup brain productivity project search, writing and task assistance team productivity">
+<div class="topline"><span class="num">#136</span><span class="badge">FREE + PAID</span></div>
+<h3>ClickUp Brain</h3><div class="category">Productivity</div>
+<div class="details"><p><b>🎁 Free Usage:</b> ClickUp free plan exists; AI features depend on plan</p><p><b>🧠 Models/Type:</b> ClickUp AI</p><p><b>✨ Features:</b> Project search, writing and task assistance</p><p><b>📱 Mobile/Web:</b> Web / mobile</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Team productivity</p><p><b>⭐ SLD Rating:</b> 8.9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://clickup.com/ai" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Presentation" data-search="slidesai presentation generate slides from text in google slides/powerpoint workflows quick presentations">
+<div class="topline"><span class="num">#137</span><span class="badge">FREEMIUM</span></div>
+<h3>SlidesAI</h3><div class="category">Presentation</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free monthly presentation allowance subject to limits</p><p><b>🧠 Models/Type:</b> Presentation AI</p><p><b>✨ Features:</b> Generate slides from text in Google Slides/PowerPoint workflows</p><p><b>📱 Mobile/Web:</b> Web / add-ons</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Quick presentations</p><p><b>⭐ SLD Rating:</b> 8.7/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.slidesai.io/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Presentation" data-search="beautiful.ai presentation smart slide layouts and presentation creation business presentations">
+<div class="topline"><span class="num">#138</span><span class="badge">FREE TRIAL + PAID</span></div>
+<h3>Beautiful.ai</h3><div class="category">Presentation</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Trial available; ongoing use is paid</p><p><b>🧠 Models/Type:</b> Presentation design AI</p><p><b>✨ Features:</b> Smart slide layouts and presentation creation</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Business presentations</p><p><b>⭐ SLD Rating:</b> 8.7/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.beautiful.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Presentation" data-search="tome presentation ai-native presentations and visual narratives visual storytelling">
+<div class="topline"><span class="num">#139</span><span class="badge">FREE + PAID</span></div>
+<h3>Tome</h3><div class="category">Presentation</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Availability and plan limits can change</p><p><b>🧠 Models/Type:</b> AI storytelling/presentation tools</p><p><b>✨ Features:</b> AI-native presentations and visual narratives</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Check current terms</p><p><b>🎯 Best For:</b> Visual storytelling</p><p><b>⭐ SLD Rating:</b> 8.5/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://tome.app/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="PDF" data-search="chatpdf pdf ask questions and summarize pdfs quick pdf understanding">
+<div class="topline"><span class="num">#140</span><span class="badge">FREEMIUM</span></div>
+<h3>ChatPDF</h3><div class="category">PDF</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free PDF questions with daily/document limits</p><p><b>🧠 Models/Type:</b> Document chat AI</p><p><b>✨ Features:</b> Ask questions and summarize PDFs</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Check terms for uploaded documents</p><p><b>🎯 Best For:</b> Quick PDF understanding</p><p><b>⭐ SLD Rating:</b> 8.8/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.chatpdf.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="PDF" data-search="humata pdf ask, summarize and analyze files researching long pdfs">
+<div class="topline"><span class="num">#141</span><span class="badge">FREEMIUM</span></div>
+<h3>Humata</h3><div class="category">PDF</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free document usage subject to limits</p><p><b>🧠 Models/Type:</b> Document AI</p><p><b>✨ Features:</b> Ask, summarize and analyze files</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Plan/data terms apply</p><p><b>🎯 Best For:</b> Researching long PDFs</p><p><b>⭐ SLD Rating:</b> 8.7/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.humata.ai/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="PDF" data-search="pdfgear pdf edit, convert, summarize and chat with pdfs free pdf editing and ai">
+<div class="topline"><span class="num">#142</span><span class="badge">FREE</span></div>
+<h3>PDFgear</h3><div class="category">PDF</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Core PDF editor and AI features offered free; availability may vary</p><p><b>🧠 Models/Type:</b> PDF AI assistant</p><p><b>✨ Features:</b> Edit, convert, summarize and chat with PDFs</p><p><b>📱 Mobile/Web:</b> Desktop / mobile availability</p><p><b>💼 Commercial Use:</b> Check terms</p><p><b>🎯 Best For:</b> Free PDF editing and AI</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.pdfgear.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Website" data-search="durable website generate small-business websites and copy fast business websites">
+<div class="topline"><span class="num">#143</span><span class="badge">FREEMIUM</span></div>
+<h3>Durable</h3><div class="category">Website</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Trial/free generation may be available; publishing/domain features vary</p><p><b>🧠 Models/Type:</b> AI website builder</p><p><b>✨ Features:</b> Generate small-business websites and copy</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Fast business websites</p><p><b>⭐ SLD Rating:</b> 8.7/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://durable.co/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Website" data-search="wix ai website builder website ai site generation, copy and business tools small-business websites">
+<div class="topline"><span class="num">#144</span><span class="badge">FREE + PAID</span></div>
+<h3>Wix AI Website Builder</h3><div class="category">Website</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free Wix site available with platform branding; paid for domain/features</p><p><b>🧠 Models/Type:</b> Wix AI</p><p><b>✨ Features:</b> AI site generation, copy and business tools</p><p><b>📱 Mobile/Web:</b> Web / mobile management</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Small-business websites</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.wix.com/ai-website-builder" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="SEO" data-search="surfer seo seo content optimization, audits and seo workflows seo content optimization">
+<div class="topline"><span class="num">#145</span><span class="badge">PAID</span></div>
+<h3>Surfer SEO</h3><div class="category">SEO</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Paid product; trial/promotions may vary</p><p><b>🧠 Models/Type:</b> SEO content AI</p><p><b>✨ Features:</b> Content optimization, audits and SEO workflows</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Business terms apply</p><p><b>🎯 Best For:</b> SEO content optimization</p><p><b>⭐ SLD Rating:</b> 9/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://surferseo.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="SEO" data-search="ubersuggest seo keywords, site audits and competitor research beginner seo research">
+<div class="topline"><span class="num">#146</span><span class="badge">FREE + PAID</span></div>
+<h3>Ubersuggest</h3><div class="category">SEO</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Limited free searches; paid plans expand data</p><p><b>🧠 Models/Type:</b> SEO/keyword tools</p><p><b>✨ Features:</b> Keywords, site audits and competitor research</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Check terms</p><p><b>🎯 Best For:</b> Beginner SEO research</p><p><b>⭐ SLD Rating:</b> 8.8/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://neilpatel.com/ubersuggest/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="SEO" data-search="answerthepublic seo discover questions and search topics content topic research">
+<div class="topline"><span class="num">#147</span><span class="badge">FREE + PAID</span></div>
+<h3>AnswerThePublic</h3><div class="category">SEO</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Limited free searches; paid plans expand usage</p><p><b>🧠 Models/Type:</b> Search insight tools</p><p><b>✨ Features:</b> Discover questions and search topics</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Check terms</p><p><b>🎯 Best For:</b> Content topic research</p><p><b>⭐ SLD Rating:</b> 8.7/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://answerthepublic.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card collapsible" data-cat="Chatbot" data-search="tidio chatbot website live chat, chatbot and customer support ai small-business customer support">
+<div class="topline"><span class="num">#148</span><span class="badge">FREE + PAID</span></div>
+<h3>Tidio</h3><div class="category">Chatbot</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free customer-chat tier; AI quotas/features vary</p><p><b>🧠 Models/Type:</b> Lyro AI / chatbot tools</p><p><b>✨ Features:</b> Website live chat, chatbot and customer support AI</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Small-business customer support</p><p><b>⭐ SLD Rating:</b> 8.8/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.tidio.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Chatbot" data-search="botpress chatbot build ai agents/chatbots with workflows and integrations custom ai chatbots">
+<div class="topline"><span class="num">#149</span><span class="badge">FREE + PAID</span></div>
+<h3>Botpress</h3><div class="category">Chatbot</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free monthly allowance available; usage limits apply</p><p><b>🧠 Models/Type:</b> Agent/chatbot platform</p><p><b>✨ Features:</b> Build AI agents/chatbots with workflows and integrations</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Custom AI chatbots</p><p><b>⭐ SLD Rating:</b> 9.2/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://botpress.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+<article class="card" data-cat="Chatbot" data-search="voiceflow chatbot design, test and deploy chat/voice agents conversational agent design">
+<div class="topline"><span class="num">#150</span><span class="badge">FREEMIUM</span></div>
+<h3>Voiceflow</h3><div class="category">Chatbot</div>
+<div class="details"><p><b>🎁 Free Usage:</b> Free starter workspace with limits</p><p><b>🧠 Models/Type:</b> Conversational AI platform</p><p><b>✨ Features:</b> Design, test and deploy chat/voice agents</p><p><b>📱 Mobile/Web:</b> Web</p><p><b>💼 Commercial Use:</b> Plan-dependent</p><p><b>🎯 Best For:</b> Conversational agent design</p><p><b>⭐ SLD Rating:</b> 9.1/10</p><p class="note"><b>🆕 Added:</b> 22 Aug 2026</p></div>
+<a class="visit" href="https://www.voiceflow.com/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a></article>
+pan></div>
+<h3>n8n</h3><div class="category">Automation</div>
+<div class="details">
+<p><b>🎁 Free Usage:</b> Self-hosted community edition is free; cloud is paid</p>
+<p><b>🧠 Models/Type:</b> n8n workflow automation</p>
+<p><b>✨ Features:</b> AI agents, workflows, integrations, self-hosting</p>
+<p><b>📱 Mobile/Web:</b> Web / self-hosted</p>
+<p><b>💼 Commercial Use:</b> Fair-code/license terms apply</p>
+<p><b>🎯 Best For:</b> Advanced AI automation</p>
+<p><b>⭐ SLD Rating:</b> 9.5/10</p>
+<p class="note"><b>🆕 Added:</b> 21 Aug 2026</p>
+</div>
+<a class="visit" href="https://n8n.io/" target="_blank" rel="noopener noreferrer">VISIT OFFICIAL TOOL ↗</a>
+</article>
 </section>
 <div id="empty" class="empty">No matching AI tool found.</div>
 </main>
@@ -1616,6 +1871,7 @@ let current='All';
 function apply(){let q=search.value.trim().toLowerCase(),shown=0;cards.forEach(c=>{let ok=(current==='All'||c.dataset.cat===current)&&(!q||c.dataset.search.includes(q));c.style.display=ok?'flex':'none';if(ok)shown++;});document.getElementById('empty').style.display=shown?'none':'block';}
 filters.forEach(b=>b.onclick=()=>{filters.forEach(x=>x.classList.remove('active'));b.classList.add('active');current=b.dataset.filter;apply();});
 search.oninput=apply;
+document.querySelectorAll('.card.collapsible').forEach(card=>{card.setAttribute('role','button');card.setAttribute('tabindex','0');card.setAttribute('aria-expanded','false');const toggle=()=>{const o=card.classList.toggle('open');card.setAttribute('aria-expanded',String(o));};card.addEventListener('click',e=>{if(e.target.closest('a'))return;toggle();});card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}});});
 </script>
 </body>
 </html>
