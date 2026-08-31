@@ -191,78 +191,9 @@ footer{text-align:center;padding:24px;border-top:1px solid #252b34;color:#8e96a2
 
 .categories-heading{text-align:center;color:#ffd45a;margin:24px 0 4px;font-size:26px}
 .categories-intro{text-align:center;color:#aeb5c2;margin:0 0 16px;font-size:14px}
-
-/* ===== SLD AI TOOLS — FIREBASE GOOGLE LOGIN ===== */
-#authGate{
-  position:fixed; inset:0; z-index:9999;
-  display:flex; align-items:center; justify-content:center;
-  padding:20px; background:rgba(5,8,14,.96);
-  backdrop-filter:blur(10px);
-}
-#authGate.hidden{display:none}
-.auth-card{
-  width:min(430px,100%);
-  background:linear-gradient(180deg,#131922,#0d1218);
-  border:1px solid #343d49;
-  border-radius:22px;
-  padding:28px;
-  text-align:center;
-  box-shadow:0 24px 70px rgba(0,0,0,.45);
-}
-.auth-logo{
-  font-size:34px;font-weight:900;letter-spacing:1px;color:#ffd45a;margin-bottom:6px;
-}
-.auth-sub{color:#b7c0cc;line-height:1.5;margin:0 0 22px}
-.google-btn{
-  width:100%;min-height:50px;border:0;border-radius:13px;
-  background:#fff;color:#111;font-size:16px;font-weight:800;
-  cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;
-}
-.google-dot{
-  width:24px;height:24px;border-radius:50%;
-  display:inline-flex;align-items:center;justify-content:center;
-  font-weight:900;background:#f1f3f4;color:#4285f4;
-}
-.auth-msg{min-height:22px;margin-top:14px;color:#ffb4b4;font-size:13px}
-.auth-note{margin-top:14px;color:#8f98a5;font-size:12px;line-height:1.45}
-#userBar{
-  display:none;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
-  padding:10px 14px;background:#0d1218;border-bottom:1px solid #2a313b;
-}
-#userBar.show{display:flex}
-#userPhoto{width:34px;height:34px;border-radius:50%;object-fit:cover;background:#222}
-#userName{font-weight:800;color:#fff}
-#logoutBtn{
-  border:1px solid #4a5360;background:#151b23;color:#fff;
-  padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700;
-}
-body.auth-locked{overflow:hidden}
-
 </style>
 </head>
-<body class="auth-locked">
-
-<div id="authGate" aria-live="polite">
-  <div class="auth-card">
-    <div class="auth-logo">SLD AI TOOLS</div>
-    <p class="auth-sub">మీ Google Accountతో Sign In చేసి AI Tools Directoryలోకి ప్రవేశించండి.</p>
-    <button id="googleSignInBtn" class="google-btn" type="button">
-      <span class="google-dot">G</span>
-      Continue with Google
-    </button>
-    <div id="authMsg" class="auth-msg"></div>
-    <div class="auth-note">
-      Passwordను ఈ websiteలో store చేయము. Login‌ను Firebase Authentication handle చేస్తుంది.
-    </div>
-  </div>
-</div>
-
-<div id="userBar">
-  <img id="userPhoto" alt="User profile">
-  <span id="userName">Signed in</span>
-  <button id="logoutBtn" type="button">Logout</button>
-</div>
-
+<body>
 <header class="hero">
 <h1>SLD AI TOOLS</h1>
 <div class="tag">50 Categories • 10 AI Tools Each</div>
@@ -278,10 +209,27 @@ body.auth-locked{overflow:hidden}
 <main class="wrap">
 
 <section class="coaching">
-  <h2>🎓 AI COACHING – TELUGU</h2>
+  <h2>🎓 AI COACHING – TELUGU • VERIFIED VIDEOS</h2>
   <p class="coach-sub">ముందుగా ఈ రెండు పూర్తి తెలుగు AI కోచింగ్ వీడియోలు చూడండి</p>
 
   <div class="coach-grid">
+
+<article class="coach-card verified-extra">
+  <div class="coach-badge">TELUGU AI COURSE</div>
+  <h3>Learn AI in Telugu — ChatGPT, Gemini, Canva AI, Firefly</h3>
+  <p><b>Topics:</b> ChatGPT, Google Gemini, Canva AI, Adobe Firefly — practical beginner learning in Telugu.</p>
+  <p><b>Best For:</b> AI beginners and practical daily-use learning</p>
+  <a class="coach-btn" href="https://www.youtube.com/watch?v=O9jlj22-7WE" target="_blank" rel="noopener">▶️ WATCH TELUGU COURSE</a>
+</article>
+
+<article class="coach-card verified-extra">
+  <div class="coach-badge">SUNO AI • TELUGU</div>
+  <h3>Suno AI Full Guide in Telugu — Create Songs with Your Own Voice</h3>
+  <p><b>Topics:</b> Suno AI basics, AI song creation and using your own voice — step-by-step Telugu guide.</p>
+  <p><b>Best For:</b> AI songs, music creators and Telugu content creators</p>
+  <a class="coach-btn" href="https://www.youtube.com/watch?v=fqmiddH_JDs" target="_blank" rel="noopener">▶️ WATCH SUNO TUTORIAL</a>
+</article>
+
     <article class="coach-card">
       <div class="coach-badge">TELUGU FULL COURSE</div>
       <h3>Complete AI Course Tutorial in Telugu — 12 Hours</h3>
@@ -8722,94 +8670,5 @@ search.addEventListener('input',()=>{
   document.getElementById('empty').style.display=shown?'none':'block';
 });
 </script>
-
-<script type="module">
-  /*
-    STEP 1:
-    Firebase Console → Project Settings → Your apps → Web app
-    అక్కడ కనిపించే firebaseConfig valuesను కింద paste చేయండి.
-  */
-  const firebaseConfig = {
-    apiKey: "PASTE_YOUR_API_KEY",
-    authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
-    projectId: "PASTE_YOUR_PROJECT_ID",
-    storageBucket: "PASTE_YOUR_PROJECT.appspot.com",
-    messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID",
-    appId: "PASTE_YOUR_APP_ID"
-  };
-
-  const gate = document.getElementById("authGate");
-  const msg = document.getElementById("authMsg");
-  const signInBtn = document.getElementById("googleSignInBtn");
-  const logoutBtn = document.getElementById("logoutBtn");
-  const userBar = document.getElementById("userBar");
-  const userName = document.getElementById("userName");
-  const userPhoto = document.getElementById("userPhoto");
-
-  function configReady() {
-    return !Object.values(firebaseConfig).some(v => String(v).includes("PASTE_YOUR_"));
-  }
-
-  if (!configReady()) {
-    msg.textContent = "Firebase config ఇంకా paste చేయలేదు. ముందుగా Firebase setup complete చేయండి.";
-    signInBtn.disabled = true;
-    signInBtn.style.opacity = ".55";
-    signInBtn.style.cursor = "not-allowed";
-  } else {
-    try {
-      const [{ initializeApp }, authMod] = await Promise.all([
-        import("https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"),
-        import("https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js")
-      ]);
-
-      const {
-        getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged
-      } = authMod;
-
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth(app);
-      const provider = new GoogleAuthProvider();
-
-      signInBtn.addEventListener("click", async () => {
-        msg.textContent = "Google Sign-In open అవుతోంది...";
-        signInBtn.disabled = true;
-        try {
-          await signInWithPopup(auth, provider);
-          msg.textContent = "";
-        } catch (err) {
-          msg.textContent = "Login కాలేదు: " + (err?.message || "Unknown error");
-        } finally {
-          signInBtn.disabled = false;
-        }
-      });
-
-      logoutBtn.addEventListener("click", async () => {
-        await signOut(auth);
-      });
-
-      onAuthStateChanged(auth, user => {
-        if (user) {
-          gate.classList.add("hidden");
-          document.body.classList.remove("auth-locked");
-          userBar.classList.add("show");
-          userName.textContent = user.displayName || user.email || "Signed in";
-          if (user.photoURL) {
-            userPhoto.src = user.photoURL;
-            userPhoto.style.display = "block";
-          } else {
-            userPhoto.style.display = "none";
-          }
-        } else {
-          gate.classList.remove("hidden");
-          document.body.classList.add("auth-locked");
-          userBar.classList.remove("show");
-        }
-      });
-    } catch (err) {
-      msg.textContent = "Firebase load error: " + (err?.message || "Please check internet connection");
-    }
-  }
-</script>
-
 </body>
 </html>
