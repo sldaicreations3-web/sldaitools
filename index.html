@@ -40,6 +40,157 @@ footer{text-align:center;padding:24px;border-top:1px solid #252b34;color:#8e96a2
 .meta{font-size:13px;color:#cbd1da;line-height:1.45;margin:4px 0 12px}
 .meta>div{padding:6px 0;border-bottom:1px dashed #252c36}
 .meta b{color:#fff}.plan{color:#8ff0a4;font-weight:900}
+
+.coaching{
+  margin:0 0 22px;
+  padding:18px;
+  border:1px solid #5a4d25;
+  border-radius:18px;
+  background:linear-gradient(180deg,#17140d,#10141b);
+}
+.coaching h2{
+  margin:0;
+  color:#ffd45a;
+  font-size:clamp(22px,4vw,30px);
+  text-align:center;
+}
+.coach-sub{
+  text-align:center;
+  color:#c7cbd2;
+  margin:7px 0 16px;
+}
+.coach-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.coach-card{
+  background:#0b0f15;
+  border:1px solid #2f3742;
+  border-radius:15px;
+  padding:16px;
+}
+.coach-card h3{
+  margin:8px 0 10px;
+  font-size:19px;
+  color:#fff;
+}
+.coach-card p{
+  color:#cbd1da;
+  line-height:1.5;
+  font-size:14px;
+}
+.coach-badge{
+  display:inline-block;
+  padding:6px 9px;
+  border-radius:999px;
+  background:#2b2411;
+  border:1px solid #635629;
+  color:#ffe18a;
+  font-size:11px;
+  font-weight:900;
+}
+.coach-btn{
+  display:block;
+  margin-top:14px;
+  padding:12px 14px;
+  text-align:center;
+  text-decoration:none;
+  border-radius:11px;
+  background:#b92222;
+  color:#fff;
+  font-weight:900;
+}
+.coach-btn:hover{filter:brightness(1.08)}
+@media(max-width:650px){
+  .coach-grid{grid-template-columns:1fr}
+}
+
+
+/* Premium category-card layout */
+#list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  align-items:start;
+}
+#list .category{
+  margin:0;
+  border-radius:18px;
+  background:linear-gradient(145deg,#121823,#0c1118);
+  border:1px solid #2d3541;
+  box-shadow:0 8px 24px rgba(0,0,0,.18);
+}
+#list .category summary{
+  min-height:92px;
+  padding:15px;
+  display:grid;
+  grid-template-columns:44px minmax(0,1fr) auto;
+  grid-template-rows:auto auto;
+  gap:7px 11px;
+}
+#list .category summary .num{
+  grid-row:1 / 3;
+  width:44px;height:44px;
+  align-self:center;
+}
+#list .category summary .title{
+  font-size:16px;
+  line-height:1.25;
+  align-self:end;
+}
+#list .category summary .count{
+  margin:0;
+  grid-column:2;
+  font-size:12px;
+  color:#a8b0bc;
+  align-self:start;
+}
+#list .category summary::after{
+  grid-column:3;
+  grid-row:1 / 3;
+  align-self:center;
+  margin:0;
+}
+#list .category[open]{
+  grid-column:1 / -1;
+  background:linear-gradient(180deg,#131a24,#0d1219);
+  border-color:#65582d;
+}
+#list .category[open] summary{
+  min-height:68px;
+  grid-template-rows:1fr;
+}
+#list .category[open] summary .num{grid-row:1}
+#list .category[open] summary .title{align-self:center}
+#list .category[open] summary .count{grid-column:auto;align-self:center}
+#list .category[open] summary::after{grid-row:1}
+#list .category[open] .tools{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  padding:4px 16px 16px;
+}
+@media(max-width:900px){
+  #list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  #list{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  #list .category summary{
+    min-height:105px;
+    padding:11px;
+    grid-template-columns:36px minmax(0,1fr) 20px;
+    gap:5px 7px;
+  }
+  #list .category summary .num{
+    width:36px;height:36px;flex-basis:36px;font-size:12px;
+  }
+  #list .category summary .title{font-size:14px}
+  #list .category summary .count{font-size:11px}
+  #list .category[open] .tools{grid-template-columns:1fr;padding:2px 10px 12px}
+}
+
+
+.categories-heading{text-align:center;color:#ffd45a;margin:24px 0 4px;font-size:26px}
+.categories-intro{text-align:center;color:#aeb5c2;margin:0 0 16px;font-size:14px}
 </style>
 </head>
 <body>
@@ -56,8 +207,32 @@ footer{text-align:center;padding:24px;border-top:1px solid #252b34;color:#8e96a2
 </header>
 
 <main class="wrap">
+
+<section class="coaching">
+  <h2>🎓 AI COACHING – TELUGU</h2>
+  <p class="coach-sub">ముందుగా ఈ రెండు పూర్తి తెలుగు AI కోచింగ్ వీడియోలు చూడండి</p>
+
+  <div class="coach-grid">
+    <article class="coach-card">
+      <div class="coach-badge">TELUGU FULL COURSE</div>
+      <h3>Complete AI Course Tutorial in Telugu — 12 Hours</h3>
+      <p><b>Topics:</b> ChatGPT, Gemini, Perplexity, Gamma, Hedra, ElevenLabs, Veo, AI Images, Video, Audio, Automation, Content Creation.</p>
+      <p><b>Best For:</b> Beginner → Advanced Telugu AI learning</p>
+      <a class="coach-btn" href="https://www.youtube.com/watch?v=NFbDEpTKPbc" target="_blank" rel="noopener">▶️ WATCH ON YOUTUBE</a>
+    </article>
+
+    <article class="coach-card">
+      <div class="coach-badge">TELUGU AI BASICS</div>
+      <h3>Learn AI in Telugu — ChatGPT, Gemini, Canva AI, Firefly</h3>
+      <p><b>Topics:</b> ChatGPT, Google Gemini, Canva AI, Adobe Firefly and practical AI usage.</p>
+      <p><b>Best For:</b> Beginners who want quick practical AI training in Telugu</p>
+      <a class="coach-btn" href="https://www.youtube.com/watch?v=O9jlj22-7WE" target="_blank" rel="noopener">▶️ WATCH ON YOUTUBE</a>
+    </article>
+  </div>
+</section>
+
 <div class="note"><b>ఎలా వాడాలి:</b> Categoryపై tap చేస్తే ఆ categoryలోని 10 tools మాత్రమే కనిపిస్తాయి. <b>Official Website</b> button official siteను కనుగొనే searchను తెరుస్తుంది. <b>తెలుగులో ఎలా వాడాలి</b> button YouTubeలో ఆ toolకి తాజా Telugu tutorialsను చూపిస్తుంది.</div>
-<div id="list">
+<h2 class="categories-heading">🧰 AI TOOL CATEGORIES</h2><p class="categories-intro">Category cardపై tap చేస్తే ఆ categoryలోని 10 tools పూర్తి వివరాలతో open అవుతాయి.</p><div id="list">
     <details class="category" data-search="📝 script writing chatgpt gemini claude copilot deepseek qwen grok perplexity writesonic rytr">
       <summary>
         <span class="num">01</span>
